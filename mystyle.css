@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/* CSS Document */
+a:link {
+  color: #f6f5f2;
+background-color: #8f8e7f;
+	padding: 15px 20px;
+	margin: 5px 10px;
+	border-radius: 10px
+}
+
+/* visited link */
+a:visited {
+  color: white;
+	background-color: #8f8e7f;
+	padding: 15px 20px;
+	margin: 5px 10px;
+	border-radius: 10px
+}
+
+/* mouse over link */
+a:hover {
+  color: #fff;
+	background-image: url("waterripple.gif")
+}
+
+/* selected link */
+a:active {
+  color: #63372c;
+}
+body {
+	background-color:#e4dfda; 
+	color:#011d4d; 
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+}
+#cheezeborgor {
+	background-color: #1171CB;
+    
+}
+
+
+#content {
+	padding: 15px; 
+}
+.threecolums { 
+width:31.75%;
+padding: 15px;
+float: left;
+}
+#headerdiv{
+	background-color: thistle;
+		background-image: url('../images/blue banner.jpg');
+		background-size: cover;
+	background-position: center;
+	font-size: 50px;
+	color: #f6f5f2;
+	padding: 25px
+
+}
+.threecolums:hover { 
+box-shadow: 5px 5px 5px 5px #888888; 
+	transform: translateY(-10px);
+} 
