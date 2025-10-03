@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+</style>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+
+</head>
+<body>
+<div id="headerdiv">Christian Ramirez first website</div>
+	
+<div id="navdiv">
+	<a href="index.html">Home</a> | 
+	<a href="aboutme.html">About Me</a> | 
+	<a href="Favoritethings.html">Favorite Things</a> | 
+	<a href="Contact.html">Contact Me</a></div>
+	
+
+	
+	<div id="grablediv"><img src="barbell.jpg" width="300" height="200" alt="barbell" style="float: left; margin-right: 15px; margin-bottom: 15px; border: 5px solid gray border-radius: 25px;"/><h1>Welcome to my website!</h1>
+ 
+		<p>On this page, I created a personal website using HTML and linked an external CSS file for styling. The page starts with a header that introduces it as "little about me." There is also a navigation bar with links to Home, About Me, Favorite Things, and Contact Me, so visitors can easily look through different parts of the site. In the main section, I added a welcoming message and several paragraphs about myself, sharing my interests like graphic and web design, gaming, working out, soccer, music, Formula 1 racing, and eating Mexican-style burritos. I also included some images and a YouTube video to make the page more fun and interesting for visitors.</p>
+		<p data-start="140" data-end="514"
+		
+		
+		
+		<p></p><img src="leigier js px.jpg" width="300px" style="float: left; margin-right: 15;" alt="cars"/>
+	
+	<img src="burrito.jpg" width="300px" style="float: right; margin-right: 15;" alt="cars"/> 
+	
+	
+	</div>
+	<div style="clear: both;"></div>
+	
+    <div class="threecolumns">
+      <h3>About Me</h3>
+      <p>My name is Christian Ramirez, and I am a student who is passionate about graphic design and web design. I enjoy learning new skills and working on creative projects that help me grow as a designer.</p>
+      <p><a href="aboutme.html">Read more...</a></p>
+    </div>
+<div class="threecolumns">
+  <h3>Favorite Things</h3>
+  <p>Besides my studies and design work, I have several hobbies. I like playing video games, working out, and playing soccer with friends. I also listen to music often, and I enjoy watching Formula 1 races whenever I can.</p>
+  <p><a href="favoritethings.html">Read more...</a></p>
+</div>
+<div class="threecolumns">
+  <h3>Contact Me</h3>
+  <p>I really appreciate you taking a look at my site. If you want more information or you'd like to hire me for any work, please drop me a note and I'll get back to you.</p>
+  <p><a href="contactme.html">Read more...</a></p>
+</div>
+<div style="clear: both;"></div>
+	
+<div id="footer">Copyright &copy; 2025 Christian Ramirez</div>
+<script>
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+	</body>
+</html>
+
+
+
